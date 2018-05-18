@@ -9,6 +9,7 @@ services:
       - ./wp-app:/var/www/html # 完整的wordpress目录文件
       #- ./plugin-name/trunk/:/var/www/html/wp-content/plugins/plugin-name # 插件目录
       #- ./theme-name/trunk/:/var/www/html/wp-content/themes/theme-name # 主题目录
+      # 数据库帐号密码
     environment:
       WORDPRESS_DB_HOST: db
       WORDPRESS_DB_NAME: wordpress
